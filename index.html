@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HREXT07 R00lz!</title>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+  <script src="app/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!--
+
+
+-->
+</head>
+<body>
+  <div class='game-content'>
+  <div id='message-one' class='game-message'>
+    Player Hand: <span id='player-hand'></span>
+    <span id='card-value'></span>
+    Dealer Hand: <span id='dealer-hand'></span>
+    <div id='message-two'>
+
+    </div>
+  </div>
+  <div id='bet' class='game-choices'>
+    Place a bet
+    <input id='bet-choice' placeholder="Enter a bet" type="text">
+    <button id='bet-submit'>bet submit</button>
+  </div>
+  <div id='gameover' class='game-message'>Game Over
+    <span id='end-message'>
+
+    </span>
+  </div>
+  <div id='hit-choice' class='game-choices'>
+      <button id='hit'>Hit</button>
+      <button id='stay'>Stay</button>
+    </div>
+  </div>
+  <div class="container-main">
+    <header>Black Jack</header>
+    <div class="container-form">
+      <input type="text" class="player-name" placeholder="enter key">
+      <button type='button' class='name-submit'>Submit</button>
+    </div>
+    <div class="container-data"></div>
+  </div>
+  <table class="table">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Money
+      </th>
+    </tr>
+    <tr>
+        <td id='player'>
+          Player Name
+        </td>
+        <td id='money'>
+          Player Money
+        </td>
+      </tr>
+</table>
+  <img src="./images/pexels-photo-534181.jpeg" alt="BlackJack table">
+
+</body>
+</html>
